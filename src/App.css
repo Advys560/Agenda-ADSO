@@ -1,59 +1,62 @@
-/* Contenedor principal de toda la aplicación */
-.app-container {
-  max-width: 400px;       /* ancho tipo app móvil */
-  margin: 20px auto;      /* centra la app en la pantalla */
-  font-family: sans-serif;
+.app-container { max-width: 520px; margin: 2rem auto; font-family: Arial, sans-serif; }
+.app-title { color:#008037; text-align:center; margin-bottom:1rem; }
+
+.form-contacto { display:flex; flex-direction:column; gap:8px; margin-bottom:20px; }
+.form-contacto input { padding:8px; border-radius:6px; border:1px solid #ccc; font-size:14px; }
+.form-contacto button { background:#008037; color:#fff; border:0; padding:10px; border-radius:6px; cursor:pointer; }
+.form-contacto button:hover { background:#006b2f; }
+
+.tarjeta-contacto { border:1px solid #ddd; border-radius:8px; padding:1rem; background:#fff; margin-bottom:.5rem; display:flex; flex-direction:column; gap:4px; }
+.tarjeta-contacto h3 { color:#008037; margin:0 0 .3rem; }
+.tarjeta-contacto .tag { margin:0; color:#555; font-size:0.9rem; }
+
+.acciones {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
-/* Título grande "Agenda ADSO 📒" */
-.app-title {
-  text-align: center;
-  color: #008037;         /* verde SENA */
-  margin-bottom: 20px;
+.btn-eliminar,
+.btn-actualizar,
+.btn-cerrar {
+  border:0;
+  border-radius:6px;
+  cursor:pointer;
 }
 
-/* Texto pequeño bajo el título ("Contactos guardados") */
-.app-subtitle {
-  text-align: center;
-  font-size: 14px;
-  color: #555;
-  margin-top: 0;
-  margin-bottom: 16px;
+.btn-eliminar { background:#c62828; color:#fff; padding:.5rem .75rem; }
+.btn-eliminar:hover { background:#8e0000; }
+
+.btn-actualizar { background:#008037; color:#fff; padding:.5rem .75rem; }
+.btn-actualizar:hover { background:#006b2f; }
+
+.modal-fondo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
-/* Tarjeta de cada contacto */
-.card-contacto {
-  border: 1px solid gray;
-  background-color: #f9f9f9;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 8px;
+.modal {
+  background: #fff;
+  width: min(100%, 420px);
+  border-radius: 12px;
+  padding: 1.2rem;
+  position: relative;
 }
 
-/* Nombre del contacto dentro de la tarjeta */
-.card-nombre {
-  margin: 0 0 6px 0;
-  font-size: 16px;
-  font-weight: bold;
-}
+.modal h2 { margin-top: 0; }
 
-/* Líneas de información (teléfono, correo) */
-.card-linea {
-  margin: 4px 0;
-  font-size: 14px;
-}
-
-/* Etiqueta del contacto (por ejemplo "Instructor", "Cliente", "Compañera") */
-.card-etiqueta {
-  margin: 4px 0;
-  font-size: 12px;
-  color: green;
-}
-
-/* Nota final al pie ("Versión 0.1...") */
-.app-nota {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 30px;
-  color: #888;
+.btn-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #eee;
+  color: #333;
+  width: 30px;
+  height: 30px;
 }
