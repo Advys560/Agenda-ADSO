@@ -1,0 +1,19 @@
+{
+  "contactos": [
+    {
+      "nombre": "samuel",
+      "telefono": "124",
+      "correo": "1234",
+      "etiqueta": "bnnise",
+      "id": "2YGi1hc2j5o"
+    },
+    {
+      "nombre": "Juan perez",
+      "telefono": "08765",
+      "correo": "123456",
+      "etiqueta": "juan",
+      "id": "0rYkYsELZYo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
