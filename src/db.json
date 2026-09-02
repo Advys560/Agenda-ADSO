@@ -13,6 +13,13 @@
       "correo": "123456",
       "etiqueta": "juan",
       "id": "0rYkYsELZYo"
+    },
+    {
+      "nombre": "samuel",
+      "telefono": "123456354",
+      "correo": "juan@gmail.com",
+      "etiqueta": "",
+      "id": "ydAjS_p-6a4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
