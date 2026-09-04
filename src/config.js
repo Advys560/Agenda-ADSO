@@ -7,11 +7,14 @@ export const API_BASE_URL = "http://localhost:3002/contactos";
 
 // Información general de la aplicación que se utilizará en App.jsx
 export const APP_INFO = {
-  // Número de ficha que se muestra en el encabezado
+  curso: "Desarrollo Web ReactJS",
   ficha: "3223876",
-  // Título principal de la aplicación
   titulo: "Agenda ADSO v7",
-  // Subtítulo o descripción corta que aparece debajo del título
   subtitulo:
     "Gestión de contactos conectada a una API local con JSON Server, con validaciones y mejor experiencia de usuario.",
+  mensajeCargando: "Cargando contactos...",
+  mensajeSinContactos:
+    "Aún no tienes contactos registrados. Agrega el primero usando el formulario superior.",
+  footer: "Desarrollo Web – ReactJS | Proyecto Agenda ADSO",
+  instructor: "Gustavo Adolfo Bolaños Dorado",
 };
