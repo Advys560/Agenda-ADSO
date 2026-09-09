@@ -1,4 +1,26 @@
 {
-  "contactos": [],
+  "contactos": [
+    {
+      "nombre": "samuel",
+      "telefono": "0876512423",
+      "correo": "juan@gmail.com",
+      "etiqueta": "",
+      "id": "jODv0F_cuFM"
+    },
+    {
+      "nombre": "morales",
+      "telefono": "4894164585",
+      "correo": "hua@gmail.com",
+      "etiqueta": "",
+      "id": "Nu2qv94mfeg"
+    },
+    {
+      "nombre": "juan",
+      "telefono": "134565432",
+      "correo": "nose@gmail.com",
+      "etiqueta": "",
+      "id": "2cJUIS2ffEY"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
